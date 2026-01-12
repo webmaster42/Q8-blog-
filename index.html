@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q8 Negocios Pro - Blog Oficial</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #ffffff;
+            color: #1a1a1a;
+            -webkit-font-smoothing: antialiased;
+        }
+        .serif-title {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        /* MODERN GRADIENTS */
+        .bg-q8-blue { background-color: #0056FF; }
+        .bg-q8-purple { background-color: #8B21F7; }
+        .bg-q8-gradient {
+            background: linear-gradient(135deg, #0056FF 0%, #8B21F7 100%);
+        }
+        .bg-q8-gradient-alt {
+            background: linear-gradient(135deg, #8B21F7 0%, #0056FF 100%);
+        }
+
+        /* MODERN BUTTONS REFINEMENT */
+        .btn-modern {
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            cursor: pointer;
+        }
+        
+        .red-button { 
+            background: linear-gradient(135deg, #0056FF 0%, #003dbb 100%);
+            color: white;
+            box-shadow: 0 10px 20px -5px rgba(0, 86, 255, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .red-button:hover { 
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px -5px rgba(0, 86, 255, 0.5);
+            background: linear-gradient(135deg, #0066ff 0%, #0056FF 100%);
+        }
+        .red-button:active { transform: translateY(-1px); }
+        
+        .purple-gradient-button {
+            background: linear-gradient(135deg, #8B21F7 0%, #6a19bd 100%);
+            color: white;
+            box-shadow: 0 10px 20px -5px rgba(139, 33, 247, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .purple-gradient-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px -5px rgba(139, 33, 247, 0.5);
+            background: linear-gradient(135deg, #a045ff 0%, #8B21F7 100%);
+        }
+
+        .glass-button {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: white;
+        }
+        .glass-button:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-color: rgba(255, 255, 255, 0.4);
+        }
+
+        /* SHADOWS & EFFECTS */
+        .hero-magazine-shadow {
+            box-shadow: 0 50px 100px -20px rgba(0, 0, 0, 0.4), 0 30px 60px -30px rgba(0, 0, 0, 0.45);
+        }
+        
+        .soft-glow-blue { box-shadow: 0 0 20px rgba(0, 86, 255, 0.2); }
+        .soft-glow-purple { box-shadow: 0 0 20px rgba(139, 33, 247, 0.2); }
+
+        @keyframes pulse-glow {
+            0%, 100% { box-shadow: 0 0 15px rgba(0, 86, 255, 0.3); }
+            50% { box-shadow: 0 0 30px rgba(0, 86, 255, 0.5); }
+        }
+        .animate-pulse-glow {
+            animation: pulse-glow 3s infinite;
+        }
+
+        /* CUSTOM SCROLLBAR */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: #ccc; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #888; }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0"
+  }
+}
+</script>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+</html>
